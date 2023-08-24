@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Ropa</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/chat.css" />
+    <link rel="stylesheet" href="style_chat.css" />
+    <link rel="stylesheet" href="./assets/css/typing.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <a href="inicio.html"
+          ><img class="logo" src="img/logo.png" alt="Logo de la Tienda"
+        /></a>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Hombre</a></li>
+          <li><a href="#">Mujer</a></li>
+          <li><a href="#">Niños</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <div class="user-icon">
+          <a href="#"><img src="img/car1.png" alt="Icono de Usuario" /></a>
+        </div>
+        <div class="cart-icon">
+          <a href="#"><img src="img/user.png" alt="Icono de Carrito" /></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="chatbox">
+        <div class="chatbox__support">
+          <div class="chatbox__header">
+            <div class="chatbox__image--header">
+              <img src="./images/image.png" alt="image" />
+            </div>
+            <div class="chatbox__content--header">
+              <h4 class="chatbox__heading--header">Chat support</h4>
+              <p class="chatbox__description--header">
+                There are many variations of passages of Lorem Ipsum available
+              </p>
+            </div>
+          </div>
+          <div class="chatbox__messages" id="box"></div>
+
+          <div class="chatbox__footer">
+            <form action="">
+              <img src="./images/icons/emojis.svg" alt="" />
+              <img src="./images/icons/microphone.svg" alt="" />
+              <input type="text" placeholder="Type your message" id="entrada" />
+              
+
+              <p class="chatbox__send--footer">Send</p>
+              <img src="./images/icons/attachment.svg" alt="" />
+              <button id="btnLoadData"></button>
+            </form>
+          </div>
+        </div>
+        <div class="chatbox__button">
+          <button type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resto del contenido de la página -->
+    <section class="featured-products">
+      <h2>Productos Destacados</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="img/prod1.jpeg" alt="Camiseta Estampada" />
+          <h3>Polo Manga Corta Surfer Negro - Algodón</h3>
+          <p class="price">S/ 48</p>
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="img/prod2.jpeg" alt="Pantalón Vaquero" />
+          <h3>Pantalón Jogger Hombre Bearcliff</h3>
+          <p class="price">S/ 62.93</p>
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="img/prod3.jpeg" alt="Pantalón Vaquero" />
+          <h3>Chompa Casual Hombre Bearcliff</h3>
+          <p class="price">S/ 55.93</p>
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="img/prod4.jpeg" alt="Pantalón Vaquero" />
+          <h3>Camisa Manga Larga Hombre University Club</h3>
+          <p class="price">S/ 103.92</p>
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="img/prod5.jpeg" alt="Pantalón Vaquero" />
+          <h3>Polerón Casual Hombre Ecko</h3>
+          <p class="price">S/ 83.93</p>
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="img/prod6.jpeg" alt="Pantalón Vaquero" />
+          <h3>Jean Slim Hombre Doo Australia</h3>
+          <p class="price">S/ 71.92</p>
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="img/prod7.jpeg" alt="Pantalón Vaquero" />
+          <h3>Casaca Casual Hombre Doo Australia</h3>
+          <p class="price">S/ 107.94</p>
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+          <img src="img/prod8.jpeg" alt="Pantalón Vaquero" />
+          <h3>Pantalón Jean Hombre Bearcliff</h3>
+          <p class="price">S/ 55.93</p>
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <!-- Agrega más productos aquí -->
+      </div>
+
+      <!-- Más productos destacados -->
+    </section>
+
+    <section class="categories">
+      <h2>Categorías</h2>
+      <ul class="category-list">
+        <li><a href="#">Hombres</a></li>
+        <li><a href="#">Mujeres</a></li>
+        <li><a href="#">Niños</a></li>
+      </ul>
+    </section>
+    <section class="newsletter">
+      <h2>Suscríbete a nuestro Boletín</h2>
+      <p>
+        Recibe las últimas novedades y ofertas exclusivas en tu correo
+        electrónico.
+      </p>
+      <form class="newsletter-form">
+        <input
+          type="email"
+          placeholder="Ingresa tu correo electrónico"
+          required
+        />
+        <button type="submit">Suscribirse</button>
+      </form>
+    </section>
+
+    <!-- Otras secciones de la página, como categorías, novedades, etc. -->
+    <footer class="footer">
+      <p>&copy; 2023 Tienda de Ropa. Todos los derechos reservados.</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/Chat.js"></script>
+    <script src="./app.js"></script>
+    <script src="./api-app.js"></script>
+  </body>
+</html>
